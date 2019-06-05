@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+a {
+  color: #FFFFFF;
+}
+body {
+  font-family: 'Source Code Pro', monospace;
+}
+body .wrapper {
+  width: 100%;
+  display: flex;
+}
+body .wrapper .leftSide {
+  width: 50%;
+  min-height: 100%;
+  background-image: url('images/programmer.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+}
+body .wrapper .rightSide {
+  background-image: url('images/bottom-white-corner.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  width: 50%;
+  min-height: 100%;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 0 6rem;
+  display: flex;
+  align-items: center;
+}
+body .wrapper .rightSide h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+body .wrapper .rightSide h3 {
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: 5rem;
+}
+body .wrapper .rightSide .innerRightDiv .rightPartial {
+  margin-bottom: 2rem;
+}
+body .wrapper .rightSide .innerRightDiv .rightPartial h4 {
+  margin-bottom: 0.7rem;
+  font-size: 1.3rem;
+}
+body .wrapper .rightSide .innerRightDiv .rightPartial p {
+  font-size: 1.2rem;
+}
+body .wrapper .rightSide .innerRightDiv .rightPartial .link {
+  font-size: 1.1rem;
+  margin-top: 1.2rem;
+}
+body .wrapper .rightSide .innerRightDiv .rightPartial .link a {
+  text-decoration: none;
+}
+body .wrapper .rightSide .innerRightDiv .rightPartial .link a:hover {
+  color: #639A67;
+}

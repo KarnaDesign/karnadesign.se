@@ -1,0 +1,89 @@
+@light: #FFFFFF;
+@dark: #000000;
+@vintage-color: #639A67;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+.wrapper {
+    height: 100%;
+}
+
+a {
+    color: @light;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+
+    .wrapper {
+        width: 100%;
+        display: flex;
+
+        .leftSide {
+            width: 50%;
+            min-height: 100%;
+            background-image: url('images/programmer.png');
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: contain;
+        }
+
+        .rightSide {
+            background-image: url('images/bottom-white-corner.png');
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            width: 50%;
+            min-height: 100%;
+            background-color: @dark;
+            color: @light;
+            padding: 0 6rem;
+            display: flex;
+            align-items: center;
+
+            h1 {
+                text-align: center;
+                font-size: 3rem;
+
+            }
+
+            h3 {
+                text-align: center;
+                margin-top: 1.2rem;
+                margin-bottom: 5rem;
+            }
+
+            .innerRightDiv {
+                .rightPartial {
+                    margin-bottom: 2rem;
+
+                    h4 {
+                        margin-bottom: 0.7rem;
+                        font-size: 1.3rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+
+                    .link {
+                        font-size: 1.1rem;
+                        margin-top: 1.2rem;
+
+                        a {
+                            text-decoration: none;
+
+                            &:hover {
+                                color: @vintage-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
