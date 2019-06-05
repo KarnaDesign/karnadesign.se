@@ -2,10 +2,12 @@
   margin: 0;
   padding: 0;
 }
-html,
-body,
-.wrapper {
-  height: 100%;
+@media only screen and (min-width: 769px) {
+  html,
+  body,
+  .wrapper {
+    height: 100%;
+  }
 }
 a {
   color: #FFFFFF;
@@ -65,4 +67,21 @@ body .wrapper .rightSide .innerRightDiv .rightPartial .link a {
 }
 body .wrapper .rightSide .innerRightDiv .rightPartial .link a:hover {
   color: #639A67;
+}
+@media only screen and (max-width: 720px) {
+  body .wrapper .leftSide {
+    display: none;
+  }
+  body .wrapper .rightSide {
+    width: 100%;
+    background-attachment: fixed;
+    padding: 2rem;
+  }
+  body .wrapper .rightSide h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+  body .wrapper .rightSide h3 {
+    font-size: 1rem;
+  }
 }
